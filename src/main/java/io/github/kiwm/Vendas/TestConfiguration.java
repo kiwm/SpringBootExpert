@@ -4,6 +4,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
+//@Profile("development")
 public class TestConfiguration {
 
     @Bean(name = "testConfig")
