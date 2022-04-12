@@ -13,7 +13,6 @@ public class ClientsService {
 
     public void saveClient(Client client) {
         validateClient(client);
-        clientsRepository.persist(client);
     }
 
     public void validateClient(Client client) {
