@@ -40,7 +40,8 @@ public class VendasApplication {
 			allClients.forEach(System.out::println);
 
 			System.out.println("Buscando clientes");
-			clientsRepository.findByNameLike("Douglas updated").forEach(System.out::println);
+			List<Client> list = clientsRepository.findByNameTest("up");
+			System.out.println(list);
 
 			System.out.println("deletando clientes");
 			clientsRepository.findAll().forEach(c -> {
